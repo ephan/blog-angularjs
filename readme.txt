@@ -1,11 +1,11 @@
 Eric Phan
-ephan@cireweb.com
-
+May 2014
 
 Browsers tested on: Firefox 28.0 (Mac OSX 10.9.2), Chrome Version 34.0.1847.131 (Mac OSX 10.9.2), Safari 7.0.3 (Mac OSX 10.9.2)
 
 Libraries used - why?: 
-	AngularJS  - to create a Single Page Application in a structured, componentized fashion. Restful APIs were consumed gracefully, dependancy injection and two-way data binding is also very useful (and difficult to implement without using a framework like Angular). Unit testing is also very easy to do using this framework - though I didn't have time to write unit tests.
+	AngularJS (1.2.16)   
+		   - to create a Single Page Application in a structured, componentized fashion. Restful APIs were consumed gracefully, dependancy injection and two-way data binding is also very useful (and difficult to implement without using a framework like Angular). Unit testing is also very easy to do using this framework - though I didn't have time to write unit tests.
 	Bootstrap  - to achieve a decent look and feel without too much effort and utilising pre-built designs. Ready-to-use buttons and grid system also came in handy.
 	Compass    - for cross browser compatible css, reusable mix-ins.
 

@@ -1,0 +1,8 @@
+	<div class="past-posts">
+		<h2>Past Posts</h2>
+		<past-post-links></past-post-links>
+		<button ng-click="createNewPost()" class="btn btn-small">Create New Post</button>
+		<button ng-disabled="!posts.length" ng-click="clearAllPosts()" class="btn btn-small btn-danger">Delete All Posts</button>
+	</div><!--div.past-posts-->
+
+	<detailed-post-list></detailed-post-list>

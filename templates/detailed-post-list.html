@@ -1,0 +1,13 @@
+<div ng-show="queryError" class="has-error">There was an error fetching posts, please try again later (err: 0001)</div>	  
+<div ng-show="deleteError" class="has-error">There was an error deleting post(s), please try again later (err: 0005)</div>
+<ul class="past-posts-list">
+	<li ng-repeat="post in posts">
+		<h3 class="post-number">{{ post.title }}</h3>
+		<h4 class="post-date">{{ post.timestamp | timestampToDate }}</h4>
+		<p class="post-text">{{ post.text }}</p>
+		<div>
+			<a ng-click="editPost(post.id)" class="btn btn-small btn-primary">Edit</a>
+			<a ng-click="deletePost(post.id)" class="btn btn-small btn-danger">Delete</a>
+		</div>
+	</li>
+</ul>

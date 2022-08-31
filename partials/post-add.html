@@ -1,0 +1,7 @@
+	<form role="form" class="container">
+	  <h2>New Post</h2>
+	  <div ng-show="createError" class="has-error">There was an error with adding this post, please review your input and try again (err: 0002)</div>
+	  <post-form-fields>
+		<button ng-disabled="!post.title || !post.text" ng-click="createNewPost()" class="btn btn-small btn-primary" >Create Post</button>
+      </post-form-fields>
+	</form>

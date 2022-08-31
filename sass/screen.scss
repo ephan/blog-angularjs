@@ -1,0 +1,147 @@
+@import "compass";
+@import "grid";
+
+body, button {
+	font-variant: small-caps;
+}
+
+div.container {
+	margin: 0 auto;
+}
+
+h1 {
+	border-bottom: 3px solid #000;
+	padding: 0 0 10px 20px;
+	margin: 0;
+	
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+ul {
+	> li {
+		list-style: none;
+	}
+}
+
+div.has-error {
+	color: #FF0000;
+	margin: 20px 0;
+}
+
+
+form.container {
+	margin-top: 20px;
+	input[type=text], textarea {
+	 	clear: right;
+		@include inline-block;		
+	    margin-bottom: 21px;
+	    vertical-align: middle;
+	    width: 800px;
+	}
+
+	textarea {
+		height: 200px;
+	}
+
+	span {
+		color: #FF0000;
+	}
+}//form.container
+
+div.past-posts {
+	@include inline-block;		
+	@include make-lg-column(3);
+    border-right: 3px solid #000;
+    float: left;
+    margin-right: -3px;
+    padding: 0 20px 20px;
+    text-align: center;
+    vertical-align: top;
+
+	a, button {
+		margin-top: 20px;
+		display: block;
+		width: 100%;
+		font-variant: small-caps;		
+	}
+}//div.past-posts
+
+detailed-post-list {
+	@include inline-block;
+	@include make-lg-column(8);
+    border-left: 3px solid #000;
+    float: left;
+    vertical-align: top;
+
+	ul {
+		vertical-align: top;
+		> li {
+		
+			> h3 { 
+				@include inline-block;
+				vertical-align: top;
+				width: 60%;
+				font: small-caps 28px/28px arial, helvetica, verdana; 
+				overflow: hidden;
+				text-overflow: ellipsis;
+				max-height: 1em;
+			}
+
+			> h4 {
+				@include inline-block;
+				vertical-align: top;
+				width: 39%;
+				text-align: right;
+				font: small-caps 28px/28px arial, helvetica, verdana; 
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			> p {
+				white-space: pre-line;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			> div {
+				text-align: right;
+				margin-bottom: 40px;
+			}
+		}
+	}	
+}//div.past-posts-content
+
+div.single-post {
+	> a {
+		display: block;
+		cursor: pointer;
+	}
+
+	h4 {
+		font: small-caps 17px/17px arial, helvetica, verdana; 
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	h3 { 
+		font: small-caps 28px/28px arial, helvetica, verdana; 
+		overflow: hidden;
+		text-overflow: ellipsis;
+		word-wrap: break-word;
+	}
+
+	p {
+		white-space: pre-line;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		font-size: 15px;
+		word-wrap: break-word;
+	}
+
+	div {
+		margin-top: 30px;
+	}
+}//div.single-post

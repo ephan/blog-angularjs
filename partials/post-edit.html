@@ -1,0 +1,8 @@
+	<form role="form" class="container">
+	  <h2>Edit Post</h2>
+	  <div ng-show="editError" class="has-error">There was an error with editing this post, please review your input and try again (err: 0003)</div>
+	  <div ng-show="showError" class="has-error">There was an error with retrieving this post (err: 0006)</div>
+	  <post-form-fields>
+      	<button ng-disabled="!post.title || !post.text" ng-click="updatePost()" class="btn btn-small btn-primary" >Update Post</button>
+	  </post-form-fields>
+	</form>

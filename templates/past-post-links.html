@@ -1,0 +1,5 @@
+<ul>
+	<li ng-repeat="post in posts">
+		<a href="/app/blog.html#/post/{{post.id}}" data-id="{{post.id}}">{{ post.timestamp | timestampToDate }} - Post {{ post.id }}</a>
+	</li>
+</ul>
